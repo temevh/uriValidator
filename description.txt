@@ -12,7 +12,8 @@ One of the most time-consuming parts was probably the regex validation. I am awa
 of using it for the first time in real life, I decided to use it for this assignment. I also took a few extra minutes to add some validity/existence checks 
 for the parameters. 
 
-In the spirit of OOP I decided to use getters (get_path and get_params), which gave a sufficient result in my opinion. 
+In the spirit of OOP I decided to use getters (get_path and get_params), which gave a sufficient result in my opinion. As for the language, I decided to use
+Python, since it is the language I am most "fluent" with.
 
 For improvements, one that comes to mind is getting rid of imported libraries. Im sure the functionalities offered by the used libraries (re and urllib) could
 be achieved without them, but for the sake of saving time and learning a bit about a new libary (urllib) I decided to use them. I used a bit over 2 hours 
