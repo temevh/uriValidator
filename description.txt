@@ -1,0 +1,22 @@
+Visma Summer Trainee 2023: software developer 
+Coding assignment, URI validation, OOP python
+
+Teemu Hämäläinen
+26.1.2023
+
+Thanks to the concrete requirements given for the program, the coding was fairly straightforward. I took my time to really understand the problem,
+and read through it multiple times to get a good understanding of whats required and needed.
+
+The first initial implementation I got done fairly quickly, but there were still some bugs and some required functions missing.
+One of the most time-consuming parts was probably the regex validation. I am aware of other solutions that dont utilize regex, but for the sake
+of using it for the first time in real life, I decided to use it for this assignment. I also took a few extra minutes to add some validity/existence checks 
+for the parameters. 
+
+In the spirit of OOP I decided to use getters (get_path and get_params), which gave a sufficient result in my opinion. 
+
+For improvements, one that comes to mind is getting rid of imported libraries. Im sure the functionalities offered by the used libraries (re and urllib) could
+be achieved without them, but for the sake of saving time and learning a bit about a new libary (urllib) I decided to use them. I used a bit over 2 hours 
+for the task, big part of which was fixing little bugs and doing input "sanititazion". 
+
+Overall I found the task to be very fun, even though at first it seemed a bit daunting, considering I have never really done anything
+similar before. I think I performed fairly well when taking everything into consideration.
