@@ -65,10 +65,16 @@ class testClient:
     def get_path(self):
         return self.id.path
 
+    # An auxiliary function in case both parameters are needed with only one function call
+    def returner(self):
+        return self.id.params, self.id.path
+
 
 testiUri = "visma-identity://sign?source=vismasign&documentid=105ab44"
 
-client1 = testClient(testiUri)
-print("path is", client1.get_path())
-print("parameters are", client1.get_params())
+client = testClient(testiUri)
+print("path is", client.get_path())
+print("parameters are", client.get_params())
+
+# print(client.returner())
 # (pls give job)
