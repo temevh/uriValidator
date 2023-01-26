@@ -42,17 +42,17 @@ class checkIdentity:
         if self.path == "login":
             # Check that the "source parameter" exists AND that it is a string
             if "source" not in self.params or self.params["source"].isalpha() == False:
-                raise Exception("Check source parameter")
+                raise Exception("CHECK SOURCE PARAMETER")
 
         elif self.path == "confirm":
             # Check that the source and paymentnumber parameters exist
             if "source" not in self.params or "paymentnumber" not in self.params:
                 raise Exception(
-                    "Check source and/or paymentnumber parameter(s)")
+                    "CHECK SOURCE AND/OR PAYMENTNUMBER PARAMETER(S)")
 
         elif self.path == "sign":
             if "source" not in self.params or "documentid" not in self.params:
-                raise Exception("Check source and/or document id parameter(s)")
+                raise Exception("CHECK SOURCE AND/OR DOCUMENTID PARAMETER(S)")
 
 
 class testClient:
