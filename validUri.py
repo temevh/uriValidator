@@ -10,21 +10,26 @@ class checkIdentity:
         self.uriChecker()
 
     def uriChecker(self):
+        # Using regex, make sure that the given URI starts with visma-identity://
         isValid = re.match("^visma-identity://.*", self.uri)
         if isValid:
             #print("URL IS VALID")
             parsed_uri = urlparse(self.uri)
+            # Extract the path from the (validated) URI
             self.path = parsed_uri.netloc
             # print(self.path)
         else:
             raise Exception("CHECK URI SCHEME")
 
+        # Make sure the URI path is recognized
         if self.path not in ['login', 'confirm', 'sign']:
             raise Exception("CHECK URI PATH")
 
+        # Extract parameters from the URI
         parameters = re.search(r'\?(.*)', self.uri).group(1)
         # print(parameters)
 
+        # Add the paremetes as key-value pairs to params dict
         for p in parameters.split("&"):
             key, value = p.split("=")
             if value == "":
@@ -67,8 +72,3 @@ client1 = testClient(testiUri)
 print("path is", client1.get_path())
 print("parameters are", client1.get_params())
 # (pls give job)
-
-
-# TODO
-# Parameter (existence) checking
-# Change paymentnumber str -> int DONE
