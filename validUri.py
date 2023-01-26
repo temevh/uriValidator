@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urlparse
 
 
 class checkIdentity:
@@ -10,8 +11,12 @@ class checkIdentity:
 
     def uriChecker(self):
         isValid = re.match("^visma-identity://.*", self.uri)
-        if isValid == True:
-            self.path = isValid.group(1)
+        if isValid:
+            print("URL IS VALID")
+            parsed_uri = urlparse(self.uri)
+            self.path = parsed_uri.netloc
+            print(self.path)
+
         else:
             raise Exception("Check URI scheme")
 
