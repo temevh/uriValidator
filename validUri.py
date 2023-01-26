@@ -9,7 +9,7 @@ class checkIdentity:
         self.uriChecker()
 
     def uriChecker(self):
-        isValid = re.match(r'^visma-identity://([a-z]+)', self.uri)
+        isValid = re.match("^visma-identity://.*", self.uri)
         if isValid == True:
             self.path = isValid.group(1)
         else:
