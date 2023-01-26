@@ -1,5 +1,4 @@
 The class needs to satisfy the following requirements:
-
 1. It takes the following information as input
     URI (type: string)
     Example: visma-identity://login?source=severa
