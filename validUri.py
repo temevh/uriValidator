@@ -54,18 +54,20 @@ class testClient:
     def __init__(self, uri) -> None:
         self.id = checkIdentity(uri)
 
-    def get_path(self):
-        return self.id.path
-
     def get_params(self):
         return self.id.params
 
+    def get_path(self):
+        return self.id.path
 
-testUri1 = "visma-identity://sign?source=vismasign&documentid=105ab44"
 
-client1 = testClient(testUri1)
+testiUri = "visma-identity://sign?source=vismasign&documentid=105ab44"
+
+client1 = testClient(testiUri)
 print("path is", client1.get_path())
 print("parameters are", client1.get_params())
+# (pls give job)
+
 
 # TODO
 # Parameter (existence) checking
