@@ -16,8 +16,7 @@ In the spirit of OOP I decided to use getters (get_path and get_params), which g
 Python, since it is the language I am most "fluent" with.
 
 For improvements, one that comes to mind is getting rid of imported libraries. Im sure the functionalities offered by the used libraries (re and urllib) could
-be achieved without them, but for the sake of saving time and learning a bit about a new libary (urllib) I decided to use them. I used a bit over 2 hours 
-for the task, big part of which was fixing little bugs and doing input "sanititazion". 
+be achieved without them, but for the sake of saving time and learning a bit about a new libary (urllib and re) I decided to use them. While picking the libraries I also made not of the licenses which they had/didn't have, just in case. I used a bit over 2 hours for the task, big part of which was fixing little bugs and doing input "sanititazion". 
 
 Overall I found the task to be very fun, even though at first it seemed a bit daunting, considering I have never really done anything
 similar before. I think I performed fairly well when taking everything into consideration.
